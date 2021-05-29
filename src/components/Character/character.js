@@ -41,7 +41,7 @@ export default class Character extends React.Component {
         <div class="row">
           <div class="col-12">
             <ul class="list-group">
-              <a href="#" onClick={() => this.setState({ expanded: i })} class="list-group-item list-group-item-action">
+              <a onClick={() => this.setState({ expanded: i })} class="list-group-item list-group-item-action">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 <h5 class="mb-1">{character.name}</h5>
                   <div class="image-parent">
