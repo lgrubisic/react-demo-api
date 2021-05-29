@@ -1,5 +1,15 @@
 import React from "react";
 import './character.css';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  color: #347FC4;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #347FC4;
+  border-radius: 3px;
+`;
 
 export default class Character extends React.Component {
   state = {
@@ -53,7 +63,7 @@ export default class Character extends React.Component {
                         Type: {character.type}<br></br>
                         Gender: {character.gender}<br></br>
                         Origin: {character.origin.name}
-                        <button type="button" class="btn btn-primary" onClick={() => this.setState({ expanded: null })}>Close</button>
+                        <Button onClick={() => this.setState({ expanded: null })}>Close</Button>
                       </li>
                     </ul>
                   </div>
